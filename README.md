@@ -9,8 +9,10 @@
 
 ### 通訊（Python）
 
-分別建立下列兩個檔案，
+分別建立下列兩個檔案：
+
 讀串口資料：```serial_port_read.py``` 
+
 寫串口資料：```serial_port_write.py```
 
 
@@ -28,7 +30,9 @@
 
 ### 通訊（Cpp）
 建立以下檔案，這是一個自收自發的程式：```main.cpp```
+
 編譯：```$ g++ main.cpp -o main -lpthread```
+
 執行：```$ ./main```
 
 

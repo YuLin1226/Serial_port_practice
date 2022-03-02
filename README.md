@@ -1,10 +1,6 @@
 # Serial_port_practice
 ###### tags: `SerialPort`,`Ubuntu`,`python`,`cpp`
 
-[TOC]
-
-
-
 ## 使用
 ### 建立串口（必須）
 先依照此程式建立虛擬串口：```simulate_serial_port.py```
@@ -21,8 +17,11 @@
 ＊使用：```$ python3 serial_port_read.py``` 和 ```$ python3 serial_port_write.py```
 
 > 備註：讀寫兩個檔案我都有加上權限 
+>
 > ```$ chmod +x serial_port_read.py```
+>
 > ```$ chmod +x serial_port_write.py```
+>
 > 但我不知道有沒有差。
 
 

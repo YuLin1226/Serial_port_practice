@@ -24,7 +24,6 @@
 > ```$ chmod +x serial_port_read.py```
 > ```$ chmod +x serial_port_write.py```
 > 但我不知道有沒有差。
-> [name=YuLin1226][time=Tue, Mar 1, 2022 9:27 AM][color=#f9f75e]
 
 
 

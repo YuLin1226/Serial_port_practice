@@ -35,12 +35,20 @@ struct SerialPort {
 
         _svc.reset();
         net::steady_timer timer{_svc, 1500ms};
-        timer.async_wait([&](error_code ec) { if (!ec) _port.cancel(); });
-        net::async_read(_port, net::buffer(buf), [&](error_code ec, size_t n) {
-            timer.cancel();
-            bool ok   = !ec || (ec == net::error::eof);
-            available = ok && n;
-        });
+        timer.async_wait(   [&](error_code ec)
+                            { 
+                                if (!ec) _port.cancel(); 
+                            }
+                        );
+        net::async_read(    _port,
+                            net::buffer(buf),
+                            [&](error_code ec, size_t n) 
+                            {
+                                timer.cancel();
+                                bool ok   = !ec || (ec == net::error::eof);
+                                available = ok && n;
+                            }
+                        );
 
         _svc.run();
 

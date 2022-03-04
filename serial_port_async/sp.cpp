@@ -139,7 +139,6 @@ namespace SP
     }
 
     std::vector<char> SP::read_and_write(uint16_t _DATA, int num_bytes){
-        const std::lock_guard<std::mutex> lock(sp_std_mutex);
         // try
         // {
         //     write_data(_DATA);

@@ -37,6 +37,5 @@ namespace SP
             bool sp_is_read_timeout;
             bool sp_available;
             std::shared_ptr<deadline_timer> sp_timeout;
-            std::mutex sp_std_mutex;
     };
 }
